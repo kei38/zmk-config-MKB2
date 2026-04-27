@@ -33,8 +33,8 @@ layers:
   - B
   - N
   - M
-  - COMMA
-  - DOT
+  - '&mkp MB1'
+  - '&mkp MB2'
   - SLASH
   - BACKSLASH
   - BT
@@ -44,8 +44,8 @@ layers:
   - {t: SPACE, h: Fnc}
   - {t: BACKSPACE, h: Fnc}
   - {t: ENTER, h: Num}
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - COMMA
+  - DOT
   - BT
   - LEFT
   - UP
@@ -64,15 +64,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F12
+  - F11
   - {t: ▽, type: trans}
   - '&mkp MB4'
   - UP ARROW
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F12
+  - {t: ▽, type: trans}
   - F10
   - F9
   - F8
@@ -84,7 +84,7 @@ layers:
   - RIGHT ARROW
   - END
   - {t: ▽, type: trans}
-  - F11
+  - {t: ▽, type: trans}
   - F5
   - F4
   - F3
@@ -355,5 +355,9 @@ layers:
   - A
   - B
 combos:
-- p: [43, 44]
+- p: [33, 34]
   k: '&mkp MB3'
+- p: [32, 33]
+  k: '&mkp MB4'
+- p: [33, 34]
+  k: '&mkp MB5'
