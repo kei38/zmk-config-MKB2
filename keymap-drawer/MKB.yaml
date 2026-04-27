@@ -355,7 +355,7 @@ layers:
   - A
   - B
 combos:
-- p: [33, 34]
+- p: [33, 32]
   k: '&mkp MB3'
 - p: [32, 31]
   k: '&mkp MB4'
