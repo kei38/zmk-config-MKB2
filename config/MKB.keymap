@@ -12,7 +12,6 @@
 #define MOUSE 3
 #define SCROLL 4
 #define BT 5
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -27,6 +26,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <20>;
     };
 
@@ -49,23 +49,24 @@
         };
     };
 
+    behaviors {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "Def";
             bindings = <
-&kp ESCAPE  &kp Q     &kp W      &kp E     &kp R        &kp T               &kp Y               &kp U          &kp I      &kp O      &kp P           &mt GRAVE EQUAL
-&kp LCTRL   &kp A     &kp S      &kp D     &kp F        &kp G               &kp H               &kp J          &kp K      &kp L      &mt SEMI MINUS  &kp SEMI
-&kp LSHFT   &kp Z     &kp X      &kp C     &kp V        &kp B               &kp N               &kp M          &mkp MB1   &mkp MB2   &kp SLASH       &kp BACKSLASH
-&mo 5       &kp LGUI  &kp LALT             &lt NUM TAB  &lt FUNC SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp COMMA  &kp DOT         &mo 5
-&kp LEFT    &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                            &kp HOME       &kp PG_UP  &kp ENTER  &kp PG_DN       &kp END
-                                 &kp A                                                                         &kp B
+&kp ESCAPE   &kp Q     &kp W      &kp E     &kp R        &kp T               &kp Y               &kp U          &kp I      &kp O      &kp P           &mt GRAVE EQUAL
+&kp LCTRL    &kp A     &kp S      &kp D     &kp F        &kp G               &kp H               &kp J          &kp K      &kp L      &mt SEMI MINUS  &kp SEMI
+&kp LSHFT    &kp Z     &kp X      &kp C     &kp V        &kp B               &kp N               &kp M          &mkp MB1   &mkp MB2   &kp SLASH       &kp BACKSLASH
+&lt 5 LANG2  &kp LGUI  &kp LALT             &lt NUM TAB  &lt FUNC SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp COMMA  &kp DOT         &lt 5 LANG1
+&kp LEFT     &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                            &kp HOME       &kp PG_UP  &kp ENTER  &kp PG_DN       &kp END
+                                  &kp A                                                                         &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_msc>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_msc>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
