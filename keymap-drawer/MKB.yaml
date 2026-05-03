@@ -37,7 +37,7 @@ layers:
   - '&mkp MB2'
   - SLASH
   - BACKSLASH
-  - BT
+  - {t: LANG2, h: BT}
   - LGUI
   - LALT
   - {t: TAB, h: Num}
@@ -46,7 +46,7 @@ layers:
   - {t: ENTER, h: Num}
   - COMMA
   - DOT
-  - BT
+  - {t: LANG1, h: BT}
   - LEFT
   - UP
   - SPACE
