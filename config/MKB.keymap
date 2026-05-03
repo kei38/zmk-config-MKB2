@@ -26,7 +26,7 @@
     inc_dec_msc: behavior_sensor_rotate_msc {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc>, <&msc>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         tap-ms = <20>;
     };
 
@@ -64,7 +64,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_msc SCRL_DOWN SCRL_UP>,
+                <&inc_dec_msc>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
