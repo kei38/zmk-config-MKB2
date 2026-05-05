@@ -58,12 +58,12 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESCAPE   &kp Q     &kp W      &kp E     &kp R        &kp T               &kp Y               &kp U          &kp I      &kp O      &kp P           &mt GRAVE EQUAL
-&kp LCTRL    &kp A     &kp S      &kp D     &kp F        &kp G               &kp H               &kp J          &kp K      &kp L      &mt SEMI MINUS  &kp SEMI
-&kp LSHFT    &kp Z     &kp X      &kp C     &kp V        &kp B               &kp N               &kp M          &mkp MB1   &mkp MB2   &kp SLASH       &kp BACKSLASH
-&lt 5 LANG2  &kp LGUI  &kp LALT             &lt NUM TAB  &lt FUNC SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp COMMA  &kp DOT         &lt 5 LANG1
-&kp LEFT     &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                            &kp HOME       &kp PG_UP  &kp ENTER  &kp PG_DN       &kp END
-                                  &kp A                                                                         &kp B
+&kp ESCAPE   &kp Q     &kp W      &kp E     &kp R        &kp T               &kp Y          &kp U        &kp I      &kp O      &kp P           &mt GRAVE EQUAL
+&kp LCTRL    &kp A     &kp S      &kp D     &kp F        &kp G               &kp H          &kp J        &kp K      &kp L      &mt SEMI MINUS  &kp SINGLE_QUOTE
+&kp LSHFT    &kp Z     &kp X      &kp C     &kp V        &kp B               &kp N          &kp M        &mkp MB1   &mkp MB2   &kp SLASH       &kp BACKSLASH
+&lt 5 LANG2  &kp LGUI  &kp LALT             &lt NUM TAB  &lt FUNC SPACE      &kp BACKSPACE  &lt 1 ENTER             &kp COMMA  &kp DOT         &lt 5 LANG1
+&kp LEFT     &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                       &kp HOME     &kp PG_UP  &kp ENTER  &kp PG_DN       &kp END
+                                  &kp A                                                                  &kp B
             >;
 
             sensor-bindings = <&inc_dec_msc>, <&inc_dec_kp PG_UP PG_DN>;
@@ -136,7 +136,9 @@
                                         &kp A                                                                     &kp B
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
