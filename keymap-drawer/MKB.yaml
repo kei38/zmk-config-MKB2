@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: MINUS, h: SEMI}
-  - SEMI
+  - SINGLE QUOTE
   - LSHFT
   - Z
   - X
@@ -42,8 +42,8 @@ layers:
   - LALT
   - {t: TAB, h: Num}
   - {t: SPACE, h: Fnc}
-  - {t: BACKSPACE, h: Fnc}
-  - {t: ENTER, h: Num}
+  - BACKSPACE
+  - {t: ENTER, h: Fnc}
   - COMMA
   - DOT
   - {t: LANG1, h: BT}
