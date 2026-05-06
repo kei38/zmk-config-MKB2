@@ -17,6 +17,7 @@
 
     kscan0: kscan0 {
         compatible = "zmk,kscan-composite";
+        wakeup-source;
         matrix {
             kscan = <&kscan1>;
         };
@@ -28,7 +29,7 @@
 
     kscan1: kscan1 {
         compatible = "zmk,kscan-gpio-charlieplex";
-        interrupt-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH)>;
+        interrupt-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         wakeup-source;
         gpios
             = <&xiao_d  0 (GPIO_ACTIVE_HIGH)>
