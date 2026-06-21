@@ -33,8 +33,8 @@ layers:
   - B
   - N
   - M
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - COMMA
+  - PERIOD
   - SLASH
   - BACKSLASH
   - {t: LANG2, h: BT}
@@ -44,8 +44,8 @@ layers:
   - {t: SPACE, h: Fnc}
   - BACKSPACE
   - {t: ENTER, h: Fnc}
-  - COMMA
-  - DOT
+  - '&mkp MB1'
+  - '&mkp MB2'
   - {t: LANG1, h: BT}
   - LEFT
   - UP
@@ -361,3 +361,7 @@ combos:
   k: '&mkp MB4'
 - p: [33, 34]
   k: '&mkp MB5'
+- p: [16, 15]
+  k: LANG2
+- p: [20, 19]
+  k: LANG1
